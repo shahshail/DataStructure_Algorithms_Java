@@ -1,0 +1,38 @@
+// HashSet is the most important data structure it implements a Set() interface
+- This Datastructure does not allow the duplicate values..
+- We can declare or initialize the hashSet by :
+HashSet h = new HashSet();
+-Default initial capacity is 16 and default load factor is 0.75
+
+HashSet h = new HashSet(int initialCapacity, float loadFactor);
+
+HashSet h = new HashSet(Collection c);
+// Load factor:
+===============================================================================================================
+PROBLEMS : 1 Count occurence of element of List in Java
+HashSet Solution :
+public static void countFrequencies(Arraylist<String> list)
+{
+  Set<String> st = new HashSet(list);
+  for(String s: st)
+  System.out.println(s + " : "+ Collection.frequency(list,s));
+  }
+
+}
+
+HashMap Solution:
+public static coutnFrequency(ArrayList<String> list){
+  Map<String,Integer> hm = new HashMap<String,Integer>();
+
+  for(String s: list){
+    Integer j = hm.get(i);
+    hm.put(i, (j == null) ? 1 : j + 1);
+  }
+  for (Entry<String, Integer> val : hm.entrySet()) {
+            System.out.println("Element " + val.getKey() + " "
+                               + "occurs"
+                               + ": " + val.getValue() + " times");
+        }
+}
+
+===============================================================================================================
